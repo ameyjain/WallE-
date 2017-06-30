@@ -4,12 +4,37 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>NMSSH.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Wall-E.xcscheme</key>
+		<key>FLEX.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>HockeySDK-HockeySDKResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PhoneNumberKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WallE.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-WallETests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CB327C3812CA5E2A070D8BCE740246BD</key>
+		<key>122BCA6FE6D96169EB07AC38C02EDC05</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D2633B8B54530E85A864E9554020E8F1</key>
+		<key>2DF4DB7551F0117ABCF18DB2BBA45DCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68A07EF405FD9BCB32A62DB85FB63511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C5BD10883BD185426DD737247F56DEC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE6B7C3E1F2EDE2C4F0393C898410D07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB9AD825427F216B54E693242E671FA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

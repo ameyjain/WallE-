@@ -1,8 +1,23 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.0'
 
-target 'Wall-E' do
+use_frameworks!
 
-   pod ’NMSSH’
-
+def app_pods
+    pod 'SDWebImage'
+    pod 'Alamofire'
+    pod 'HockeySDK'
+    pod 'GoogleAnalytics'
+    pod 'PhoneNumberKit', '~> 1.2’
+    
+    # Note: configurations => ['Debug'] will prevent FLEX from being added to Release builds
+    pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+end
+ 
+target ‘WallE’ do
+    app_pods
+end
+ 
+target ‘WallETests' do
+    app_pods
 end
