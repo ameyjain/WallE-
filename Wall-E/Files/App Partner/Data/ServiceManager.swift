@@ -7,14 +7,11 @@
 //
 
 import UIKit
-import HockeySDK
 
 class ServiceManager: NSObject
 {
     @objc enum Service: NSInteger
     {
-        case HockeyApp
-        case DebugManager
         case GoogleAnalytics
         case Notifications
         
@@ -22,10 +19,6 @@ class ServiceManager: NSObject
         {
             switch self
             {
-            case .HockeyApp:
-                return "HockeyApp"
-            case .DebugManager:
-                return "DebugManager"
             case .GoogleAnalytics:
                 return "GoogleAnalytics"
             case .Notifications:
@@ -54,10 +47,6 @@ class ServiceManager: NSObject
         
         switch service
         {
-        case .HockeyApp:
-            self.authenticateHockeyApp()
-        case .DebugManager:
-            DebugManager.displayDebug()
         case .GoogleAnalytics:
             self.trackGoogleAnalytics()
         case .Notifications:
@@ -77,17 +66,6 @@ class ServiceManager: NSObject
     func isEnabled(_ service: Service) -> Bool
     {
         return self.enabledServices.contains(service)
-    }
-    
-    //MARK: - Private
-    private func authenticateHockeyApp()
-    {
-        BITHockeyManager.shared().configure(withIdentifier: Constants.key_HockeyAppIdentifier)
-        
-        // Automatically add crash reports
-        BITHockeyManager.shared().crashManager.crashManagerStatus = .autoSend
-        BITHockeyManager.shared().start()
-        BITHockeyManager.shared().authenticator.authenticateInstallation()
     }
     
     private func trackGoogleAnalytics()

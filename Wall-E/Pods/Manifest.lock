@@ -1,36 +1,23 @@
 PODS:
   - Alamofire (4.5.0)
-  - FLEX (2.4.0)
   - GoogleAnalytics (3.17.0)
-  - HockeySDK (4.1.6):
-    - HockeySDK/DefaultLib (= 4.1.6)
-  - HockeySDK/DefaultLib (4.1.6)
-  - PhoneNumberKit (1.2.3):
-    - PhoneNumberKit/PhoneNumberKitCore (= 1.2.3)
-    - PhoneNumberKit/UIKit (= 1.2.3)
-  - PhoneNumberKit/PhoneNumberKitCore (1.2.3)
-  - PhoneNumberKit/UIKit (1.2.3):
-    - PhoneNumberKit/PhoneNumberKitCore
+  - NMSSH (2.2.7)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
-  - FLEX (~> 2.0)
   - GoogleAnalytics
-  - HockeySDK
-  - PhoneNumberKit (~> 1.2)
+  - NMSSH
   - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
-  HockeySDK: 95db557d54489a570dcdefae0d02f98eecc279a3
-  PhoneNumberKit: 1e5cca669113fc361a8c82ec1ee559c62b8cd0f7
+  NMSSH: dbe527b7eda5a90f55f487d4d44e527c317d55e8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 18ffde1d9f3dd60f89fa70cdd119801651fbc176
+PODFILE CHECKSUM: cd64b30baa02515f2d01993a9306a34730b3fd8e
 
 COCOAPODS: 1.2.1

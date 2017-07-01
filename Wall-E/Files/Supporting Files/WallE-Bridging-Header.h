@@ -3,17 +3,14 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 #import "LoginViewController.h"
 #import "SignupViewController.h"
 #import "MainModel.h"
 #import "CompletionBlocks.h"
 #import "GCD.h"
-#import "Tab2ViewController.h"
 #import "SVProgressHUD.h"
 #import "GeneralInfoData.h"
 #import "UserData.h"
-#import "DebugManager.h"
 #import "GAI.h"
 #import "GAILogger.h"
 #import "GAITrackedViewController.h"

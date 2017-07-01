@@ -10,7 +10,7 @@ import UIKit
 
 @objc protocol CoreViewController
 {
-    var title: String {get}
+    var screenName: String {get}
 }
 
 final class CoreTabBarViewController: UITabBarController
@@ -31,7 +31,7 @@ final class CoreTabBarViewController: UITabBarController
     //Note - add your core custom classes here instead of `UIViewController`
     private lazy var coreViewControllers: [UIViewController] =
     {
-        return [MainViewController(), Tab2ViewController(), UIViewController()]
+        return [MainViewController(), WEPairingViewController(), UIViewController()]
     }()
     
     var currentNavController: UINavigationController?

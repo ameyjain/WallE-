@@ -23,9 +23,7 @@
     [[UserManager shared] loadLocalUser];
     
     // Services
-    [[ServiceManager shared] enableWithService:ServiceHockeyApp];
     [[ServiceManager shared] enableWithService:ServiceGoogleAnalytics];
-    [[ServiceManager shared] enableWithService:ServiceDebugManager];
     
     [[ServiceManager shared] enableWithService:ServiceNotifications completion:^{
         [[PushNotificationManager shared] configureWithLaunchOptions:launchOptions inApplication:application];
@@ -42,7 +40,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [DebugManager displayDebug];
     
     //General info
     [[GeneralInfoManager shared] fetchGeneralInfo];

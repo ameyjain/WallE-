@@ -10,7 +10,11 @@ import Foundation
 
 final class Constants : NSObject {
     
-    // SDK Keys
-    static let key_HockeyAppIdentifier = "<key>"
     static let key_GoogleAnalyticsTrackingId = "<id>"
+    
+    // MARK: Raspberry Pi Constants
+    static let HOST                       = "192.168.88.106:22" //"192.168.0.16:22"
+    static let USER_NAME                  = "AmeyJain" //"pi"
+    static let PASSWORD                   = "boise1" //"pi"
+
 }

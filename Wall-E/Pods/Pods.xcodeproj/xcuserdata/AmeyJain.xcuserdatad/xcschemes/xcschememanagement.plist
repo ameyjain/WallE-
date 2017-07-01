@@ -9,17 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FLEX.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>HockeySDK-HockeySDKResources.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>PhoneNumberKit.xcscheme</key>
+		<key>NMSSH.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>122BCA6FE6D96169EB07AC38C02EDC05</key>
+		<key>0D51F0504BCD0CFF32504A1C90BDFE7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2DF4DB7551F0117ABCF18DB2BBA45DCB</key>
+		<key>19894B81C3491AE48ED0C5FF732B288E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68A07EF405FD9BCB32A62DB85FB63511</key>
+		<key>528D5A150A3460B5C740923DD5DD2EA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A3B322C77C0224889A6287F06EF1109</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C5BD10883BD185426DD737247F56DEC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DE6B7C3E1F2EDE2C4F0393C898410D07</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EB9AD825427F216B54E693242E671FA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
