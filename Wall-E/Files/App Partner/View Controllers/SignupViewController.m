@@ -133,7 +133,19 @@
 
 - (IBAction)didPressLoginButton:(id)sender
 {
-    [Router showLoginOnSuccess:self.completion];
+    
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    [UIView  beginAnimations: @"showCountries" context: nil];
+    [UIView setAnimationCurve: UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationDuration:0.75];
+    [self.navigationController pushViewController: loginVC animated:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.navigationController.view cache:NO];
+    [UIView commitAnimations];
+}
+
+- (IBAction)closeSignUpProcess:(id)sender
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void) signupUser
