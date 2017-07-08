@@ -91,7 +91,7 @@ final class UserManager: NSObject
     
     func displayLoginScreen(onSuccess: NoArgsCompletionBlock?)
     {
-        Router.show(destination: Destination.preAccount(destination: .login(onSuccess: onSuccess)))
+        Router.show(destination: Destination.preAccount(destination: .signUp(onSuccess: onSuccess)))
     }
 }
 

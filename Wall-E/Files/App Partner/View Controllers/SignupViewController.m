@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *usernameUnderLineView;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -67,6 +68,7 @@
     self.passwordTextField.delegate = self;
     [self.usernameErrorLabel setHidden:true];
     [self.passwordErrorLabel setHidden:true];
+    [self.loginButton setTitleColor:UIColor.mainColor forState:UIControlStateNormal];
     [self configureFloatingLabels];
     
 }
@@ -129,6 +131,11 @@
     }
 }
 
+- (IBAction)didPressLoginButton:(id)sender
+{
+    [Router showLoginOnSuccess:self.completion];
+}
+
 -(void) signupUser
 {
     
@@ -139,10 +146,14 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     
-    [self.signUpButton becomeFirstResponder];
-    
-    if ([self isValidInput])
+    if (textField == _usernameTextField)
     {
+        [self.passwordTextField becomeFirstResponder];
+    }
+    
+    else if (textField == _passwordTextField && [self isValidInput])
+    {
+        [self.signUpButton becomeFirstResponder];
         [self signupUser];
         [self.view endEditing:YES];
         return YES;
@@ -167,12 +178,15 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
-    
-    if ([self isValidInput])
+    if (textField == self.usernameTextField)
     {
-        [self signUpButton];
+        [self isEmailValid];
     }
-
+    else if (textField == self.passwordTextField)
+    {
+        [self isPasswordValid];
+    }
+    
 }
 
 #pragma mark - Validation and Completion
@@ -212,17 +226,17 @@
     if ([self.usernameTextField isEmpty])
     {
         NSError *error = [NSError emailEmpty];
-        [self didFindErrorInPassport:[error localizedDescription]];
+        [self didFindErrorInUserName:[error localizedDescription]];
         return NO;
     }
     else if (![self.usernameTextField isValidEmail])
     {
         NSError *error = [NSError emailInvalid];
-        [self didFindErrorInPassport:[error localizedDescription]];
+        [self didFindErrorInUserName:[error localizedDescription]];
         return NO;
     }
     
-    [self resetPassportView];
+    [self resetUserNameView];
     return YES;
     
 }

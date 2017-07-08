@@ -16,7 +16,7 @@ extension NSError
     static let unknownError = NSError.with(message: Constants.defaultErrorMessage)
 
     static let passwordEmpty = NSError.with(message: "Password cannot be empty")
-    static let passwordTooShort = NSError.with(message: "Please enter a password that is at least 6 characters long")
+    static let passwordTooShort = NSError.with(message: "Please enter a password that is at least 8 characters long")
     static let emailEmpty = NSError.with(message: "Email cannot be empty")
     static let emailInvalid = NSError.with(message: "Email is not valid")
 
