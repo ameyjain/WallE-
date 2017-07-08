@@ -54,7 +54,7 @@ extension Router
     {
         
         let loginVC = LoginViewController(successCompletion: onSuccess)
-        CoreTabBarViewController.instance.currentNavController?.pushViewController(loginVC, animated: true)
+        CoreTabBarViewController.instance.currentNavController?.present(loginVC, animated: true)
     }
     
     static func showSignUp(onSuccess: NoArgsCompletionBlock?)
