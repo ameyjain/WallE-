@@ -15,12 +15,11 @@ extension NSError
 {
     static let unknownError = NSError.with(message: Constants.defaultErrorMessage)
 
-    //Login / Sign up
-    static let usernameEmpty = NSError.with(message: "Username cannot be empty")
-    static let usernameTooShort = NSError.with(message: "Please enter a username that is at least 3 characters long")
     static let passwordEmpty = NSError.with(message: "Password cannot be empty")
     static let passwordTooShort = NSError.with(message: "Please enter a password that is at least 6 characters long")
     static let emailEmpty = NSError.with(message: "Email cannot be empty")
+    static let emailInvalid = NSError.with(message: "Email is not valid")
+
     static let emptyCredentials = NSError.with(message: "Credentials cannot be empty")
     
 }

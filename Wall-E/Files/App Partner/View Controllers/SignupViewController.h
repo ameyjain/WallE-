@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CompletionBlocks.h"
 
 @interface SignupViewController : UIViewController
+
 - (nonnull instancetype)initWithSuccessCompletion:(NoArgsCompletionBlock _Nullable )completion;
+
 @end

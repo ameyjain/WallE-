@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JVFloatLabeledTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NMSSH.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,22 +42,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19894B81C3491AE48ED0C5FF732B288E</key>
+		<key>2A4448146C785C426971111F117D773C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>528D5A150A3460B5C740923DD5DD2EA1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5A3B322C77C0224889A6287F06EF1109</key>
+		<key>3C1DF288381BDEB906AE3D5259EB8938</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A5A3705312BABA63BB597F8085B8158</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2AB4F1FF4C9B30CE0F35F39B9C4B1CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
