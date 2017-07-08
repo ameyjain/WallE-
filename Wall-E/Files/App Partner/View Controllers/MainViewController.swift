@@ -14,16 +14,21 @@ class MainViewController: UIViewController, CoreViewController {
     var screenName: String = "Home"
         
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.configureUI()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+// MARK: UI config
+    
+    func configureUI() {
+        
+        if !UserManager.shared.loggedIn {
+            
+            UserManager.shared.displayLoginScreen(onSuccess: nil)
+        }
     }
     
-
       
 // MARK: Tableview Delegates
     

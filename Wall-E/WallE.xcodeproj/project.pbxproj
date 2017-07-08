@@ -94,14 +94,14 @@
 		6789AF4C1F07217400386529 /* WEDeviceCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6789AF4A1F07217400386529 /* WEDeviceCellTableViewCell.xib */; };
 		6789AF4F1F0725B500386529 /* WEPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6789AF4D1F0725B500386529 /* WEPairingViewController.swift */; };
 		6789AF501F0725B500386529 /* WEPairingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6789AF4E1F0725B500386529 /* WEPairingViewController.xib */; };
+		67D20FE91F1084C5008638B5 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D20FE71F1084C5008638B5 /* SignupViewController.m */; };
+		67D20FEA1F1084C5008638B5 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D20FE81F1084C5008638B5 /* SignupViewController.xib */; };
 		F2595C3D1EDF3892006B66A1 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2595C3B1EDF3892006B66A1 /* Destination.swift */; };
 		F2595C3E1EDF3892006B66A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2595C3C1EDF3892006B66A1 /* Router.swift */; };
 		F262406A1ED5E12A00C81733 /* NotificationCenter+Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26240661ED5E12A00C81733 /* NotificationCenter+Closures.swift */; };
 		F262406B1ED5E12A00C81733 /* NSError+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26240671ED5E12A00C81733 /* NSError+Helpers.swift */; };
 		F262406D1ED5E12A00C81733 /* UITableView+Dequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26240691ED5E12A00C81733 /* UITableView+Dequeuing.swift */; };
 		F262406F1ED5E19500C81733 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262406E1ED5E19500C81733 /* UIViewController+Utils.swift */; };
-		F26240791ED5F2F800C81733 /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F26240771ED5F2F800C81733 /* SignupViewController.m */; };
-		F262407A1ED5F2F800C81733 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26240781ED5F2F800C81733 /* SignupViewController.xib */; };
 		F262407C1ED5FC9A00C81733 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F262407B1ED5FC9A00C81733 /* Utilities.swift */; };
 		F284B3B51ECA0F9200EEF744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F284B3B41ECA0F9200EEF744 /* Assets.xcassets */; };
 		F284B3BB1ECA0F9D00EEF744 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F284B3B71ECA0F9D00EEF744 /* AppDelegate.m */; };
@@ -228,6 +228,9 @@
 		6789AF4A1F07217400386529 /* WEDeviceCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WEDeviceCellTableViewCell.xib; sourceTree = "<group>"; };
 		6789AF4D1F0725B500386529 /* WEPairingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WEPairingViewController.swift; sourceTree = "<group>"; };
 		6789AF4E1F0725B500386529 /* WEPairingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WEPairingViewController.xib; sourceTree = "<group>"; };
+		67D20FE61F1084C5008638B5 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		67D20FE71F1084C5008638B5 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		67D20FE81F1084C5008638B5 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		7DE70BF6C142A95762B91AD7 /* Pods-WallE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallE/Pods-WallE.debug.xcconfig"; sourceTree = "<group>"; };
 		CFB2A8353AE908D913BC228D /* Pods-WallE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallE.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallE/Pods-WallE.release.xcconfig"; sourceTree = "<group>"; };
 		EAD67809D41B078B9622EA5B /* Pods_WallETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,9 +240,6 @@
 		F26240671ED5E12A00C81733 /* NSError+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSError+Helpers.swift"; path = "Files/App Partner/Extensions/NSError+Helpers.swift"; sourceTree = SOURCE_ROOT; };
 		F26240691ED5E12A00C81733 /* UITableView+Dequeuing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITableView+Dequeuing.swift"; path = "Files/App Partner/Extensions/UITableView+Dequeuing.swift"; sourceTree = SOURCE_ROOT; };
 		F262406E1ED5E19500C81733 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Utils.swift"; path = "Files/App Partner/Extensions/UIViewController+Utils.swift"; sourceTree = SOURCE_ROOT; };
-		F26240761ED5F2F800C81733 /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignupViewController.h; path = "Files/App Partner/View Controllers/SignupViewController.h"; sourceTree = SOURCE_ROOT; };
-		F26240771ED5F2F800C81733 /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignupViewController.m; path = "Files/App Partner/View Controllers/SignupViewController.m"; sourceTree = SOURCE_ROOT; };
-		F26240781ED5F2F800C81733 /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignupViewController.xib; path = "Files/App Partner/View Controllers/SignupViewController.xib"; sourceTree = SOURCE_ROOT; };
 		F262407B1ED5FC9A00C81733 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = "Files/App Partner/Helpers/Utilities.swift"; sourceTree = SOURCE_ROOT; };
 		F284B36D1EC9FD3E00EEF744 /* WallE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F284B3B41ECA0F9200EEF744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Files/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -484,9 +484,9 @@
 		F26240711ED5F2BA00C81733 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
-				F26240761ED5F2F800C81733 /* SignupViewController.h */,
-				F26240771ED5F2F800C81733 /* SignupViewController.m */,
-				F26240781ED5F2F800C81733 /* SignupViewController.xib */,
+				67D20FE61F1084C5008638B5 /* SignupViewController.h */,
+				67D20FE71F1084C5008638B5 /* SignupViewController.m */,
+				67D20FE81F1084C5008638B5 /* SignupViewController.xib */,
 			);
 			name = Signup;
 			sourceTree = "<group>";
@@ -823,13 +823,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F262407A1ED5F2F800C81733 /* SignupViewController.xib in Resources */,
 				6789AF4C1F07217400386529 /* WEDeviceCellTableViewCell.xib in Resources */,
 				2705E9571EF44888002C9549 /* SVProgressHUD.bundle in Resources */,
 				6789AF501F0725B500386529 /* WEPairingViewController.xib in Resources */,
 				F2B498401ED5D89F009313CD /* LoginViewController.xib in Resources */,
 				F2B497891ED481A2009313CD /* SettingsDEBUG.bundle in Resources */,
 				F2B498451ED5D8AC009313CD /* MainViewController.xib in Resources */,
+				67D20FEA1F1084C5008638B5 /* SignupViewController.xib in Resources */,
 				F284B3BE1ECA0F9D00EEF744 /* SplashScreen.xib in Resources */,
 				F284B3B51ECA0F9200EEF744 /* Assets.xcassets in Resources */,
 			);
@@ -1046,6 +1046,7 @@
 				2705E9551EF44888002C9549 /* SVIndefiniteAnimatedView.m in Sources */,
 				21326AB61F02FE5F005B5878 /* VideoManager.swift in Sources */,
 				2705E95C1EF44958002C9549 /* ProgressHud.swift in Sources */,
+				67D20FE91F1084C5008638B5 /* SignupViewController.m in Sources */,
 				F2B497F31ED5CE7C009313CD /* UINavigationBarExtensions.swift in Sources */,
 				F262406A1ED5E12A00C81733 /* NotificationCenter+Closures.swift in Sources */,
 				F2B497FD1ED5CE7C009313CD /* UITextFieldExtensions.swift in Sources */,
@@ -1059,7 +1060,6 @@
 				21D460781EFB14AB005955B2 /* NSDateExtensions.swift in Sources */,
 				211480F51EFA2DEF00F8E2A4 /* NSError+Constants.swift in Sources */,
 				F29CCE6F1EDE0B5900728ABA /* UIFont+Project.swift in Sources */,
-				F26240791ED5F2F800C81733 /* SignupViewController.m in Sources */,
 				212D4D011EE99CD0003FDE43 /* UICollectionView+Dequeuing.swift in Sources */,
 				F262406B1ED5E12A00C81733 /* NSError+Helpers.swift in Sources */,
 				216422D31F0415D40037AC96 /* NetworkRequest.swift in Sources */,

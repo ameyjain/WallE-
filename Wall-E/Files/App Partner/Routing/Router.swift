@@ -52,13 +52,15 @@ extension Router
 {
     static func showLogin(onSuccess: NoArgsCompletionBlock?)
     {
-        let loginVC = UINavigationController(rootViewController: LoginViewController(successCompletion: onSuccess))
-        CoreTabBarViewController.instance.currentNavController?.present(loginVC, animated: false, completion: nil)
+        
+        let loginVC = LoginViewController(successCompletion: onSuccess)
+        CoreTabBarViewController.instance.currentNavController?.pushViewController(loginVC, animated: true)
     }
     
     static func showSignUp(onSuccess: NoArgsCompletionBlock?)
     {
-        let signUpViewController = SignupViewController(successCompletion: onSuccess)
-    CoreTabBarViewController.instance.currentNavController?.pushViewController(signUpViewController, animated: true)
+        
+        let signUpViewController = UINavigationController(rootViewController: SignupViewController(successCompletion: onSuccess))
+        CoreTabBarViewController.instance.currentNavController?.present(signUpViewController, animated: false, completion: nil)
     }
 }

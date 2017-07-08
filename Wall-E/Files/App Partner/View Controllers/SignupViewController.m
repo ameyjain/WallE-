@@ -7,12 +7,21 @@
 //
 
 #import "SignupViewController.h"
+#import "JVFloatLabeledTextField.h"
 
 @interface SignupViewController () <UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (strong, nonatomic, nullable) NoArgsCompletionBlock successCompletion;
+
+@property (strong, nonatomic, nullable) NoArgsCompletionBlock completion;
+
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UILabel *usernameErrorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passwordErrorLabel;
+@property (weak, nonatomic) IBOutlet UIView *passwordUnderLineView;
+@property (weak, nonatomic) IBOutlet UIView *usernameUnderLineView;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *usernameTextField;
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 @end
 
 @implementation SignupViewController
@@ -25,7 +34,7 @@
     
     if (self)
     {
-        self.successCompletion = completion;
+        self.completion = completion;
     }
     
     return self;
@@ -37,80 +46,66 @@
     [self configureUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self configureNavBar];
+}
 
 #pragma mark - UI
+
+- (void)configureFloatingLabels
+{
+
+    [_usernameTextField setFloatingLabelTextColor:UIColor.mainColor];
+    [_usernameTextField setFloatingLabelActiveTextColor:UIColor.mainColor];
+    [_passwordTextField setFloatingLabelTextColor: UIColor.mainColor];
+    [_passwordTextField setFloatingLabelActiveTextColor:UIColor.mainColor];
+}
 
 - (void)configureUI
 {
     self.usernameTextField.delegate = self;
-    self.emailTextField.delegate = self;
     self.passwordTextField.delegate = self;
+    [self.usernameErrorLabel setHidden:true];
+    [self.passwordErrorLabel setHidden:true];
+    [self.loginButton setTitleColor:UIColor.mainColor forState:UIControlStateNormal];
+    [self configureFloatingLabels];
+    
 }
 
-
-#pragma mark - Validation and Completion
-
-- (BOOL)isValidInput
+-(void)didFindErrorInUserName:(NSString *) errorMessage
 {
-    // Username check
-    if (self.usernameTextField.text.length == 0)
-    {
-        [self displayErrorAlert:[NSError usernameEmpty]];
-        return NO;
-    }
-    else if (self.usernameTextField.text.length < 3)
-    {
-        [self displayErrorAlert:[NSError usernameTooShort]];
-        return NO;
-    }
-    
-    // Email check
-    if (self.emailTextField.text.length == 0)
-    {
-        [self displayErrorAlert:[NSError emailEmpty]];
-        return NO;
-    }
-    
-    // Password check
-    if (self.passwordTextField.text.length == 0)
-    {
-        [self displayErrorAlert:[NSError passwordEmpty]];
-        return NO;
-    }
-    else if (self.passwordTextField.text.length < 6)
-    {
-        [self displayErrorAlert:[NSError passwordTooShort]];
-        return NO;
-    }
-    
-    return YES;
+    [self.usernameErrorLabel setTextColor: [UIColor redColor]];
+    [self.usernameErrorLabel setText: errorMessage];
+    [self.usernameErrorLabel setHidden:NO];
+    [self.usernameUnderLineView setBackgroundColor: [UIColor redColor]];
+
 }
 
-
-#pragma mark - Login
-
-- (void)signupUser
+-(void)didFindErrorInPassport:(NSString *) errorMessage
 {
-    [[UserManager shared] signupWithUsername:self.usernameTextField.text email:self.emailTextField.text password:self.passwordTextField.text completion:^(BOOL succeeded, NSError *error) {
-        
-        if (succeeded)
-        {
-            // Assuming this login flow was presented modally
-            [self dismissViewControllerAnimated:YES completion:nil];
-            
-            if (self.successCompletion)
-            {
-                self.successCompletion();
-            }
-            
-        }
-        else
-        {
-            [self displayErrorAlert:error title:@"Signup Unsuccessful"];
-        }
-    }];
+    [self.passwordErrorLabel setTextColor: [UIColor redColor]];
+    [self.passwordErrorLabel setText: errorMessage];
+    [self.passwordErrorLabel setHidden:NO];
+    [self.passwordUnderLineView setBackgroundColor: [UIColor redColor]];
 }
 
+-(void)resetUserNameView
+{
+    [self.usernameErrorLabel setHidden:YES];
+    [self.usernameUnderLineView setBackgroundColor: [UIColor blackColor]];
+}
+
+-(void)resetPassportView
+{
+    [self.passwordErrorLabel setHidden:YES];
+    [self.passwordUnderLineView setBackgroundColor: [UIColor blackColor]];
+}
+
+- (void)configureNavBar
+{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 
 #pragma mark - Buttons
 
@@ -122,29 +117,129 @@
     }
 }
 
+- (IBAction)toggleTextFieldSecureEntry:(id)sender
+{
+    BOOL isFirstResponder = self.passwordTextField.isFirstResponder;
+    if (isFirstResponder)
+    {
+        [self.passwordTextField resignFirstResponder];
+    }
+    self.passwordTextField.secureTextEntry = !self.passwordTextField.secureTextEntry;
+    if (isFirstResponder)
+    {
+        [self.passwordTextField becomeFirstResponder];
+    }
+}
+
+- (IBAction)didPressLoginButton:(id)sender
+{
+    [Router showLoginOnSuccess:self.completion];
+}
+
+-(void) signupUser
+{
+    
+}
 
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if (textField == self.usernameTextField)
-    {
-        [self.emailTextField becomeFirstResponder];
-    }
-    else if (textField == self.emailTextField)
+    
+    if (textField == _usernameTextField)
     {
         [self.passwordTextField becomeFirstResponder];
     }
-    else
+    
+    else if (textField == _passwordTextField && [self isValidInput])
     {
-        if ([self isValidInput])
-        {
-            [self signupUser];
-            [self.view endEditing:YES];
-            return YES;
-        }
+        [self.signUpButton becomeFirstResponder];
+        [self signupUser];
+        [self.view endEditing:YES];
+        return YES;
     }
+
     return NO;
 }
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+    if (textField == self.passwordTextField)
+    {
+        [self resetPassportView];
+    }
+    else
+    {
+        [self resetUserNameView];
+    }
+    
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    if (textField == self.usernameTextField)
+    {
+        [self isEmailValid];
+    }
+    else if (textField == self.passwordTextField)
+    {
+        [self isPasswordValid];
+    }
+    
+}
+
+#pragma mark - Validation and Completion
+
+- (BOOL)isValidInput
+{
+    if ([self isPasswordValid] && [self isEmailValid])
+    {
+        return YES;
+    }
+
+    return NO;
+}
+
+-(BOOL) isPasswordValid
+{
+    if (self.passwordTextField.text.length == 0)
+    {
+        NSError *error = [NSError passwordEmpty];
+        [self didFindErrorInPassport:[error localizedDescription]];
+        return NO;
+    }
+    else if (self.passwordTextField.text.length < 8 || self.passwordTextField.text.length > 20)
+    {
+        NSError *error = [NSError passwordTooShort];
+        [self didFindErrorInPassport:[error localizedDescription]];
+        return NO;
+    }
+    
+    [self resetPassportView];
+    return YES;
+    
+}
+
+-(BOOL) isEmailValid
+{
+    if ([self.usernameTextField isEmpty])
+    {
+        NSError *error = [NSError emailEmpty];
+        [self didFindErrorInUserName:[error localizedDescription]];
+        return NO;
+    }
+    else if (![self.usernameTextField isValidEmail])
+    {
+        NSError *error = [NSError emailInvalid];
+        [self didFindErrorInUserName:[error localizedDescription]];
+        return NO;
+    }
+    
+    [self resetUserNameView];
+    return YES;
+    
+}
+
 
 @end

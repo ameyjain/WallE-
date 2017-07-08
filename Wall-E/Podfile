@@ -8,6 +8,8 @@ def app_pods
     pod 'Alamofire'
     pod 'GoogleAnalytics'
     pod 'NMSSH'
+    pod 'JVFloatLabeledTextField'
+
 end
  
 target ‘WallE’ do

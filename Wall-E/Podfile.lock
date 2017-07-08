@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.5.0)
   - GoogleAnalytics (3.17.0)
+  - JVFloatLabeledTextField (1.2.0)
   - NMSSH (2.2.7)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
@@ -9,15 +10,17 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - GoogleAnalytics
+  - JVFloatLabeledTextField
   - NMSSH
   - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  JVFloatLabeledTextField: 96c0c1b6739001801340d25b86aff990d67c4181
   NMSSH: dbe527b7eda5a90f55f487d4d44e527c317d55e8
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: cd64b30baa02515f2d01993a9306a34730b3fd8e
+PODFILE CHECKSUM: 4c4b41f02b0915e93a5cafff3f802c7e6df58ab8
 
 COCOAPODS: 1.2.1
