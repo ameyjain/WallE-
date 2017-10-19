@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header/static_header';
 
 export default class About extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="container">
           <div className="jumbotron">
             <h1>About</h1>
