@@ -32,43 +32,9 @@ export default class App extends Component {
 
           <section id="wrapper">
 
-              <section id="one" className="wrapper spotlight style1">
-                <div className="inner">
-                  <a href="#" className="image"><img src="images/pic01.jpg" alt="" /></a>
-                  <div className="content">
-                    <h2 className="major">Magna arcu feugiat</h2>
-                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" className="special">Learn more</a>
-                  </div>
-                </div>
-              </section>
-
-              <section id="two" className="wrapper alt spotlight style2">
-                <div className="inner">
-                  <a href="#" className="image"><img src="images/pic02.jpg" alt="" /></a>
-                  <div className="content">
-                    <h2 className="major">Tempus adipiscing</h2>
-                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" className="special">Learn more</a>
-                  </div>
-                </div>
-              </section>
-
-              <section id="three" className="wrapper spotlight style3">
-                <div className="inner">
-                  <a href="#" className="image"><img src="images/pic03.jpg" alt="" /></a>
-                  <div className="content">
-                    <h2 className="major">Nullam dignissim</h2>
-                    <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" className="special">Learn more</a>
-                  </div>
-                </div>
-              </section>
-
               <section id="four" className="wrapper alt style1">
                 <div className="inner">
-                  <h2 className="major">Vitae phasellus</h2>
-                  <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+                  <h2 className="major">Our Team</h2>
                   <section className="features">
                     <article>
                       <a href="#" className="image"><img src="images/pic04.jpg" alt="" /></a>
@@ -82,18 +48,6 @@ export default class App extends Component {
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
                       <a href="#" className="special">Learn more</a>
                     </article>
-                    <article>
-                      <a href="#" className="image"><img src="images/pic06.jpg" alt="" /></a>
-                      <h3 className="major">Ante fermentum</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                      <a href="#" className="special">Learn more</a>
-                    </article>
-                    <article>
-                      <a href="#" className="image"><img src="images/pic07.jpg" alt="" /></a>
-                      <h3 className="major">Fusce consequat</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-                      <a href="#" className="special">Learn more</a>
-                    </article>
                   </section>
                   <ul className="actions">
                     <li><a href="#" className="button">Browse All</a></li>
@@ -101,6 +55,74 @@ export default class App extends Component {
                 </div>
               </section>
           </section>
+
+            <section className="wrapper style1 align-center">
+              <div className="inner">
+                <div className="items style1 medium onscroll-fade-in">
+                  <section>
+                    <span className="icon style2 major fa-diamond"></span>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-save"></span>
+                    <h3>Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-bar-chart"></span>
+                    <h3>Dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-wifi"></span>
+                    <h3>Amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-cog"></span>
+                    <h3>Magna</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-paper-plane"></span>
+                    <h3>Tempus</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-desktop"></span>
+                    <h3>Amey</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-refresh"></span>
+                    <h3>Elit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-hashtag"></span>
+                    <h3>Morbi</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-bolt"></span>
+                    <h3>Turpis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-envelope"></span>
+                    <h3>Ultrices</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                  <section>
+                    <span className="icon style2 major fa-leaf"></span>
+                    <h3>Risus</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+                  </section>
+                </div>
+              </div>
+            </section>
+
           <Footer/>
       </div>
     );
