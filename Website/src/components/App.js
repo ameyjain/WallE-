@@ -32,20 +32,18 @@ export default class App extends Component {
 
           <section className="wrapper style1 align-center">
             <div className="inner">
-              <div className="items style1 medium onscroll-fade-in">
-                <section>
-                  <span className="icon style2 major fa-diamond"></span>
-                  <h3>WIRELESS</h3>
+              <section className="profile">
+                <article>
                   <a href="#" className="image"><img src="images/pic04.jpg" alt="" /></a>
-                  <p>Just connect the speaker to same wifi as your smart phone or tablet and you are good to go.</p>
-                </section>
-                <section>
-                  <span className="icon style2 major fa-save"></span>
-                  <h3>POWERFUL MIC</h3>
-                  <a href="#" className="image"><img src="images/pic04.jpg" alt="" /></a>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-                </section>
-              </div>
+                  <h3 className="major">Amey Jain</h3>
+                  <p>Co-founder</p>
+                </article>
+                <article>
+                  <a href="#" className="image"><img src="images/pic05.jpg" alt="" /></a>
+                  <h3 className="major">Shubhi Yede</h3>
+                  <p>Co-founder</p>
+                </article>
+              </section>
             </div>
           </section>
 
