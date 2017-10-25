@@ -4661,7 +4661,7 @@
 	}
 
 		.spotlight.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 7em 0 8.25em 0 ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -4674,9 +4674,9 @@
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			width: 65%;
+			width: 60%;
 			max-width: 64rem;
-			margin: 0 auto;
+			margin-left: 0 auto;
 		}
 
 		.spotlight.style1 .image {
@@ -4688,16 +4688,12 @@
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 35%;
+			width: 40%;
 			min-width: 25rem;
 			border-radius: 0;
 		}
 
 			.spotlight.style1 .image img {
-				-moz-object-fit: cover;
-				-webkit-object-fit: cover;
-				-ms-object-fit: cover;
-				object-fit: cover;
 				-moz-object-position: center;
 				-webkit-object-position: center;
 				-ms-object-position: center;
@@ -4714,9 +4710,8 @@
 		@media screen and (max-width: 1680px) {
 
 			.spotlight.style1 .content {
-				padding: 5rem 5rem 3rem 5rem ;
+				padding: 5rem 25rem 13rem 11rem ;
 			}
-
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -8978,13 +8973,17 @@
 											/* Banner */
 
 												#banner {
-													padding: 10em 0 4.75em 0 ;
+													padding: 7em 0 8.25em 0 ;
+													background-size: auto, cover;
+													background-position: center, center;
+													margin-bottom: -6.5em;
 												}
 
 													#banner .inner {
 														margin: 0 auto;
 														width: 55em;
 													}
+
 
 													#banner .logo {
 														-moz-transition: opacity 2s ease, -moz-transform 1s ease;
@@ -9061,19 +9060,6 @@
 														text-transform: uppercase;
 													}
 
-													@media screen and (max-width: 1280px) {
-
-														#banner {
-															padding: 7em 0 8.25em 0 ;
-															background-color: #2e3141;
-															background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-															background-size: auto, cover;
-															background-position: center, center;
-															margin-bottom: -6.5em;
-														}
-
-													}
-
 													@media screen and (max-width: 980px) {
 
 														#banner {
@@ -9146,6 +9132,11 @@
 
 													/* Footer */
 
+													#footer {
+														background-color: #F5F5F5;
+													}
+
+
 														#footer .inner {
 															padding: 5em 0 3em 0 ;
 															display: -moz-flex;
@@ -9209,8 +9200,6 @@
 														@media screen and (max-width: 1280px) {
 
 															#footer {
-																background-color: #2e3141;
-																background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 																background-size: auto, cover;
 																background-position: center, center;
 																margin-top: -6.5em;
@@ -9291,3 +9280,120 @@
 															}
 
 														}
+
+														.footer-social-icons {
+    														width: 350px;
+    														display:block;
+    														margin: 0 auto;
+														}
+														.social-icon {
+    													color: #000;
+														}
+
+														/* Tiles */
+
+															.tiles {
+																display: -moz-flex;
+																display: -webkit-flex;
+																display: -ms-flex;
+																display: flex;
+																-moz-flex-wrap: wrap;
+																-webkit-flex-wrap: wrap;
+																-ms-flex-wrap: wrap;
+																flex-wrap: wrap;
+																background-color: #6fc3df;
+																border-top: 0 !important;
+															}
+
+																.tiles + * {
+																	border-top: 0 !important;
+																}
+
+																.tiles article {
+																	-moz-align-items: center;
+																	-webkit-align-items: center;
+																	-ms-align-items: center;
+																	align-items: center;
+																	display: -moz-flex;
+																	display: -webkit-flex;
+																	display: -ms-flex;
+																	display: flex;
+																	-moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+																	-webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+																	-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+																	transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+																	padding: 4em 4em 2em 4em ;
+																	background-position: center;
+																	background-repeat: no-repeat;
+																	background-size: cover;
+																	cursor: default;
+																	height: 40vh;
+																	max-height: 40em;
+																	min-height: 23em;
+																	overflow: hidden;
+																	position: relative;
+																	width: 100%;
+																}
+
+																	.tiles article .image {
+																		display: none;
+																	}
+
+
+																	.tiles article header {
+																		position: relative;
+																		z-index: 3;
+																	}
+
+																	.tiles article h3 {
+																		font-size: 1.75em;
+																	}
+
+																	.tiles article .link.primary {
+																		border: 0;
+																		height: 100%;
+																		left: 0;
+																		position: absolute;
+																		top: 0;
+																		width: 100%;
+																		z-index: 4;
+																	}
+
+																@media screen and (max-width: 1280px) {
+
+																	.tiles article {
+																		padding: 4em 3em 2em 3em ;
+																		height: 80vh;
+																		max-height: 30em;
+																		min-height: 20em;
+																	}
+
+																}
+
+																@media screen and (max-width: 736px) {
+
+																	.tiles article {
+																		padding: 3em 1.5em 1em 1.5em ;
+																		height: 16em;
+																		max-height: none;
+																		min-height: 0;
+																	}
+
+																		.tiles article h3 {
+																			font-size: 1.5em;
+																		}
+
+																}
+
+																@media screen and (max-width: 480px) {
+
+																	.tiles {
+																		display: block;
+																	}
+
+																		.tiles article {
+																			height: 20em;
+																			width: 100% !important;
+																		}
+
+																}
