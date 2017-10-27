@@ -4,8 +4,10 @@ import { Header } from './Header'
 import { NavBar } from './Header'
 import { Creators } from './Home'
 import { InfoGrid } from './Home'
+import $ from 'jquery';
 
 export default class App extends Component {
+
   render() {
     return (
       <div id="page-wrapper">
@@ -14,23 +16,17 @@ export default class App extends Component {
 
           <Header />
 
-          <section id="one" className="tiles">
-            <article>
-              <div className="image">
-                <img src="images/pic02.jpg" alt="" />
-                <h2>A Movie in the Park:<br />Kung Fu Panda</h2>
-              </div>
-
-              <header className="major">
-                <h3><a href="landing.html" className="link">Wall-e Home</a></h3>
-                <p>Ipsum dolor sit amet</p>
-              </header>
-            </article>
+          <section id="two" className="bg">
+            <header className="major align-center">
+              <h1>Simple & Intuitive Design</h1>
+            </header>
           </section>
 
-          <Creators />
-
           <InfoGrid />
+
+          <section id="two" className="bg" />
+
+          <Creators />
 
           <Footer/>
 
