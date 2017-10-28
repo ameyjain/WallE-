@@ -16,11 +16,12 @@ export default class App extends Component {
 
           <Header />
 
-          <section id="two" className="bg">
+          <div id="two" className="bg">
             <header className="major align-center">
-              <h1>Simple & Intuitive Design</h1>
+              <h1 id="line1" >Simple & Intuitive</h1>
+              <h1>Design</h1>
             </header>
-          </section>
+          </div>
 
           <InfoGrid />
 

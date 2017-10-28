@@ -9411,3 +9411,12 @@
     background-size: cover;
 		background-attachment: fixed;
 }
+
+.bg h1 {
+	color: #fff;
+	text-align: center;
+	display: block;
+}
+.bg h1#line1 {
+	padding-top: 20%;
+}
