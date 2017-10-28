@@ -17,15 +17,25 @@ export default class App extends Component {
           <Header />
 
           <div id="two" className="bg">
-            <header className="major align-center">
-              <h1 id="line1" >Simple & Intuitive</h1>
-              <h1>Design</h1>
-            </header>
+            <div className="heading1">
+              <h2 id="line1" >SIMPLE & INTUITIVE DESIGN</h2>
+            </div>
           </div>
 
           <InfoGrid />
 
-          <section id="two" className="bg" />
+          <div id="three" className="bg">
+            <div id="mytextbox" className="textbox align-left">
+              <span className="textHeading">HOW IT WORKS</span>
+              <ul>
+                <li>Plug power cable into wall-e speaker and power adapter to wall socket.</li>
+                <li>Install Google Home app and Alexa App on your device (phone/tablet).</li>
+                <li>Connect the speaker to the same wifi network as your smart device</li>
+                <li>Follow instructions to set up google home.</li>
+                <li>Follow instructions to set up Alexa.</li>
+              </ul>
+            </div>
+          </div>
 
           <Creators />
 

@@ -9401,10 +9401,8 @@
 .bg {
     /* The image used */
     background-image: url("https://images.apple.com/v/iphone-x/c/images/overview/primary/design_hero_large.jpg");
+		height: fit-content;
 
-    /* Full height */
-    height: 75%;
-		width: 100%;
 
     /* Center and scale the image nicely */
     background-repeat: no-repeat;
@@ -9412,11 +9410,48 @@
 		background-attachment: fixed;
 }
 
-.bg h1 {
+.bg h2 {
 	color: #fff;
 	text-align: center;
 	display: block;
 }
-.bg h1#line1 {
-	padding-top: 20%;
+
+div.heading1 {
+	padding-right: 30%;
+	padding-left: 30%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+ul li {
+	color: white;
+}
+div#mytextbox {
+	padding-left: 70%;
+	padding-top: 10%;
+	width: 95%;
+}
+span.textheading {
+	color: white;
+	font-size: 2.25rem;
+}
+
+@media screen and (max-width: 1280px) {
+
+	div#mytextbox {
+		padding-left: 50%;
+	}
+
+
+@media screen and (max-width: 736px) {
+
+	div#mytextbox {
+		padding-left: 30%;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		div#mytextbox {
+			padding-left: 10%;
+		}
+
 }
