@@ -1,15 +1,23 @@
 /* Banner */
 
 #banner {
-  padding: 7em 0 8.25em 0;
-  background-size: auto, cover;
-  background-position: center, center;
-  margin-bottom: -6.5em;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin: 3rem 0;
+  position: relative;
 }
 
 #banner .inner {
-  margin: 0 auto;
-  width: 55em;
 }
 
 #banner .logo {
