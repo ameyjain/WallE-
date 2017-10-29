@@ -1,9 +1,36 @@
 div.whiteSection {
-	background-color: black;
-	display: block;
+	background-color: white;
 }
-.whiteSection div {
-  height: fit-content;
-	width: fit-content;
-	display: block;
+div#imageDiv1 {
+  vertical-align: middle;
+  display: none;
+}
+@media screen and (max-width: 711px) {
+	div#imageDiv1 {
+    display: inline-block;;
+	}
+}
+
+div#textDiv {
+  vertical-align: middle;
+  display: inline-block;
+  background-color: white;
+}
+
+div#imageDiv2 {
+  vertical-align: middle;
+  display: inline-block;
+}
+@media screen and (max-width: 711px) {
+	div#imageDiv2 {
+    display: none;
+	}
+}
+
+div.divSpan {
+  padding-top: 10%;
+}
+span {
+  color: black;
+  text-decoration: underline;
 }
