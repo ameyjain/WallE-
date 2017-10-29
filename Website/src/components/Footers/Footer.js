@@ -24,7 +24,7 @@ export default class Footer extends Component {
 
               <form method="post" action="#">
                 <div className="field">
-                  <input type="email" name="email" id="email" value="Email" />
+                  <input type="email" name="email" id="email" />
                 </div>
                 <ul className="actions vertical">
                 <li><a href="#first" className="button big wide smooth-scroll-middle special">Subscribe Now</a></li>
