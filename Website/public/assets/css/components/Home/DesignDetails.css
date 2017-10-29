@@ -7,7 +7,7 @@ div#imageDiv1 {
 }
 @media screen and (max-width: 711px) {
 	div#imageDiv1 {
-    display: inline-block;;
+    display: inline-block;
 	}
 }
 
@@ -28,9 +28,30 @@ div#imageDiv2 {
 }
 
 div.divSpan {
-  padding-top: 10%;
+  padding-top: 20%;
+}
+@media screen and (max-width: 711px) {
+	div.divSpan {
+    padding-top: 10%;
+	}
+}
+div.designHeading {
+	width: 50%;
+	display: block;
+}
+@media screen and (max-width: 711px) {
+	div.designHeading {
+    width: 100%;
+	}
+}
+div#line1 {
+	padding-top: 10%;
 }
 span {
   color: black;
   text-decoration: underline;
+}
+span.DesignHeading {
+	font-size: 2.25rem;
+	text-decoration: none;
 }
