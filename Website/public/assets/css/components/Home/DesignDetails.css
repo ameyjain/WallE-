@@ -1,0 +1,9 @@
+div.whiteSection {
+	background-color: black;
+	display: block;
+}
+.whiteSection div {
+  height: fit-content;
+	width: fit-content;
+	display: block;
+}
