@@ -2346,6 +2346,10 @@ input[type="radio"]:focus + label:before {
   display: none;
 }
 
+.icon.style2 {
+	color: #47D3E5;
+}
+
 .icon.style2:before {
   border-radius: 2.75em;
   display: inline-block;
@@ -2363,7 +2367,7 @@ input[type="radio"]:focus + label:before {
   font-size: 1.25rem;
 }
 
-a.icon.style2:before {
+.icon.style2:before {
   -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2371,15 +2375,15 @@ a.icon.style2:before {
 }
 
 .icon.style2:before {
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 0 1px #47D3E5;
 }
 
-a.icon.style2:hover:before {
+.icon.style2:hover:before {
   box-shadow: inset 0 0 0 1px #47D3E5;
   color: #47D3E5;
 }
 
-a.icon.style2:active:before {
+.icon.style2:active:before {
   background-color: rgba(71, 211, 229, 0.1);
   box-shadow: inset 0 0 0 1px #47D3E5;
   color: #47D3E5;
