@@ -1,0 +1,8 @@
+div.myBuyNowSection {
+  background-image: url("../../../../images/bg.jpg");
+  height: fit-content;
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
