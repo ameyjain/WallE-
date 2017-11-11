@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 980px) {
   #footer {
-    margin-top: -4.75em;
+    margin-top: 0;
     padding-top: 4.75em;
   }
   #footer .inner {

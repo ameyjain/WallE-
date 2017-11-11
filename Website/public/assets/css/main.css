@@ -7,6 +7,9 @@
 @import url(components/Home/DesignDetails.css);
 @import url(components/Home/Creators.css);
 @import url(components/Home/Footer.css);
+@import url(components/Contact/ContactContent.css);
+@import url(components/Contact/FAQ.css);
+
 
 /*
 	Story by HTML5 UP
@@ -2214,6 +2217,7 @@ input[type="radio"] + label:before {
   text-align: center;
   top: 0;
   width: 1.65rem;
+  opacity: 0;
 }
 
 input[type="checkbox"]:checked + label:before,
