@@ -5,7 +5,7 @@ export default class Creators extends Component {
 
   render() {
       return (
-        <div className="wrapper style1 align-center">
+        <div className="wrapper align-center">
           <div className="inner">
             <h1 className="major">Creators</h1>
             <section className="profile">

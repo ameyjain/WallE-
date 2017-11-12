@@ -8,8 +8,8 @@ export default class FAQ extends Component {
   render() {
     return (
       <div className="accordion-list-item">
-          <input id="a-whatIsYTSR" type="checkbox" name="tabs" className="accordion-header"/>
-          <label htmlFor="a-whatIsYTSR">{this.props.question}</label>
+          <input id={this.props.qid} type="checkbox" name="tabs" className="accordion-header"/>
+          <label htmlFor={this.props.qid}>{this.props.question}</label>
           <div className="tab-content accordion-content">
               <p>{this.props.answer}</p>
           </div>

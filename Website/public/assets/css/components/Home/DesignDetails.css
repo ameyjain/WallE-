@@ -47,10 +47,10 @@ div.designHeading {
 div#line1 {
 	padding-top: 10%;
 }
-span {
+#textDiv span {
   color: black;
-  text-decoration: underline;
 }
+
 span.DesignHeading {
 	font-size: 2.25rem;
 	text-decoration: none;
