@@ -1,0 +1,451 @@
+.accordion {
+    margin-top: 0;
+    border-top: solid 0 black
+}
+.accordion-list-item {
+    border-bottom: solid 1px
+}
+.accordion li>div {
+    overflow: hidden
+}
+.accordion-list-item,
+.contact-option {
+    list-style: none
+}
+.contact-option {
+    clear: left
+}
+.accordion-header {
+    font-size: 1.500em;
+    text-decoration: none;
+    padding: 20px 0 20px 10px;
+    text-transform: uppercase;
+    letter-spacing: .38px;
+    line-height: 20px;
+    display: block;
+    font-weight: 700
+}
+.margin-bottom {
+    margin-bottom: 1em
+}
+.margin-top {
+    margin-top: 1em
+}
+.accordion_main {
+    margin-bottom: 10vw
+}
+.accordion-list-item {
+    cursor: pointer
+}
+.LoyAccordionBronze,
+.LoyAccordionSilver,
+.LoyAccordionGold,
+.LoyAccordionPlat {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: .5vw;
+    font-size: 3.7vw
+}
+.LoyAccordionBronze {
+    color: #955338
+}
+.LoyAccordionSilver {
+    color: #747474
+}
+.LoyAccordionGold {
+    color: #a37e41
+}
+.LoyAccordionPlat {
+    color: #a1aba9
+}
+.accordion li:first-child {
+    border-top: solid 1px
+}
+.accordion {
+    text-align: left
+}
+.accordion-header {
+    font-size: 4.4vw;
+    font-weight: bold;
+    line-height: 5vw;
+    padding: 8vw 0 6.5vw 6vw;
+    text-decoration: none;
+    letter-spacing: .38px;
+    display: block
+}
+#LoyFAQ p {
+    margin: 1vw 11vw 8vw 0;
+}
+.accordion div:first-child {
+    border-top: solid 1px
+}
+.LoyFAQAccordion-item {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden
+}
+#LoyFAQ input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1
+}
+label {
+    font-size: 4.3vw;
+    font-weight: bold;
+    line-height: 5vw;
+    padding: 8vw 14vw 7vw 8vw;
+    text-decoration: none;
+    letter-spacing: .1vw;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    background: #FFF;
+    cursor: pointer
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    margin-left: 45px;
+    -webkit-transition: max-height .75s;
+    -o-transition: max-height .75s;
+    transition: max-height .75s
+}
+.tab-content p {
+    margin: 1em
+}
+#LoyFAQ input:checked ~ .tab-content {
+    max-height: 260vw
+}
+#LoyFAQ label::after {
+    position: absolute;
+    right: 0;
+    top: -3vw;
+    display: block;
+    width: 12vw;
+    font-size: 8.2vw;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s
+}
+#LoyFAQ input[type=checkbox]+label::after {
+    content: '\2335';
+    transform: scale(1.2, 1);
+    -webkit-transform: scale(1.2, 1);
+    -moz-transform: scale(1.2, 1);
+    -ms-transform: scale(1.2, 1);
+    -o-transform: scale(1.2, 1)
+
+}
+#LoyFAQ input[type=checkbox]:checked+label::after {
+    transform: scale(1.2, 1) rotate(180deg);
+    -webkit-transform: scale(1.2, 1) rotate(180deg);
+    -moz-transform: scale(1.2, 1) rotate(180deg);
+    -ms-transform: scale(1.2, 1) rotate(180deg);
+    -o-transform: scale(1.2, 1) rotate(180deg)
+}
+@media screen and (min-width: 737px) {
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden
+    }
+    #LoyBannerImageDesktop {
+        display: block
+    }
+    #LoyBannerImageMobile {
+        display: none
+    }
+    #LoyContainer h1 {
+        margin: 48px 0 0 0;
+        letter-spacing: 2px;
+        font-size: 38px;
+        line-height: 50px
+    }
+    #LoyContainer h2 {
+        font-size: 22px;
+        line-height: inherit;
+        letter-spacing: .38px
+    }
+    #LoyContainer p {
+        font-size: 14px;
+        letter-spacing: inherit;
+        line-height: 22px;
+        margin: inherit
+    }
+    #LoyBanner {
+        width: 2560px;
+        height: 590px;
+        overflow: hidden;
+        left: 50%;
+        margin-left: -1280px
+    }
+    #LoyBanner p {
+        bottom: 13%;
+        margin: 0 auto
+    }
+    #LoyBanner img {
+        top: -110px;
+        position: relative
+    }
+    #LoyJoinNowBtn {
+        width: 7%;
+        font-size: 18px;
+        line-height: 48px;
+        bottom: 19%
+    }
+    .LoySection {
+        margin-bottom: inherit
+    }
+    #LoyPerksSection p,
+    #LoyLevelsSection p {
+        line-height: 27px
+    }
+    #LoyPerksSection p {
+        font-size: 16px
+    }
+    #LoyLevelsSection p {
+        font-size: 14px
+    }
+    .LoyPerk {
+        width: 43%;
+        display: inline-table;
+        margin: 4% auto 6% auto;
+        text-align: center
+    }
+    .LoyPerk img {
+        width: 34%
+    }
+    .LoyPerkIcon {
+        visibility: hidden
+    }
+    #LoyContainer .LoyPerk p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 276px
+    }
+    #LoyLevelsTable {
+        margin: 2% auto;
+        width: 83.9%;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 1%
+    }
+    table {
+        border-spacing: 10px
+    }
+    table b {
+        font-weight: 500;
+        font-size: 14px
+    }
+    th,
+    td {
+        font-size: inherit;
+        line-height: inherit
+    }
+    th {
+        height: 70px
+    }
+    td {
+        height: 40px
+    }
+    td:first-child {
+        width: 34%;
+        padding: 0 0 0 5%
+    }
+    th:nth-child(2),
+    tr:nth-child(-n+3) td:nth-child(2),
+    th:nth-child(3),
+    tr:nth-child(-n+5) td:nth-child(3),
+    th:nth-child(4),
+    tr:nth-child(-n+7) td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5) {
+        width: 16%
+    }
+    .LoyTableBullet {
+        font-size: 12px
+    }
+    #LoyPrimeLogo {
+        width: 14.6%
+    }
+    #LoyPrime h2 {
+        font-size: 14px
+    }
+    #LoyPrime {
+        margin: 25px auto 60px auto
+    }
+    #LoyPrime p {
+        width: 66%;
+        margin: auto;
+        line-height: 20px
+    }
+    .accordion-header {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 25px 0 20px 21px;
+        text-decoration: none;
+        letter-spacing: .38px;
+        display: block
+    }
+    .accordion-list-item {
+        padding-bottom: 7px
+    }
+    #LoyFAQ h1 {
+        margin-top: -10px
+    }
+    #LoyFAQ p {
+        margin: 0 40px 20px 0
+    }
+    #LoyFAQ label {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 25px 0 8px 21px;
+        text-decoration: none;
+        letter-spacing: .38px;
+        display: block;
+        text-transform: uppercase;
+        position: relative;
+        background: #FFF;
+        cursor: pointer
+    }
+    #LoyFAQ label::after {
+        position: absolute;
+        right: 0;
+        top: -7px;
+        display: block;
+        width: 1.8em;
+        font-size: 25px;
+        line-height: 3;
+        text-align: center;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s
+    }
+    #LoyFAQ input:checked ~ .tab-content {
+        max-height: 380px
+    }
+    .tab-content {
+        max-height: 0;
+        overflow: hidden;
+        margin-left: 45px;
+        -webkit-transition: max-height .5s;
+        -o-transition: max-height .5s;
+        transition: max-height .5s
+    }
+}
+@media screen and (min-width: 1024px) {
+    body .page-container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0
+    }
+    body .page-container .page-content {
+        position: relative;
+        width: 100%
+    }
+    .global-bar .page-container {
+        width: 1024px
+    }
+    .title-container {
+        width: 1024px
+    }
+    header.page-header .title-container {
+        margin: 0 auto
+    }
+    #LoyContainer {
+        margin: auto;
+        width: 1024px
+    }
+    .accordion {
+        margin-top: 50px;
+        text-align: left
+    }
+    .accordion_main {
+        margin-bottom: 30px
+    }
+    .accordion li .accordion-content {
+        margin-left: 25px
+    }
+    .LoyAccordionBronze,
+    .LoyAccordionSilver,
+    .LoyAccordionGold,
+    .LoyAccordionPlat {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 5px 5px 0
+    }
+}
+#leftNavigation a.boutique {
+    color: #000
+}
+#leftNavigation {
+    position: relative;
+    float: left;
+    width: 130px;
+    line-height: 1.7em;
+    padding-left: 2px;
+    padding-top: 6px;
+    padding-right: 12px
+}
+#leftNavigation a {
+    text-decoration: none;
+    font-size: 12px
+}
+#leftNavigation a:hover,
+#leftNavigation .selected,
+#leftNavigation .OneLinkHideSelected,
+#leftNavigation .uppercaseSelected,
+#leftNavigation .boutiqueSelected,
+#leftNavigation .specialSelected,
+#leftNavigation .loginPopoverSelected,
+#leftNavigation .loginPopoverKnownSelected,
+#leftNavigation .topRatedNavSelected {
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline
+}
+#leftNavigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative
+}
+#leftNavigation li {
+    line-height: 25px
+}
+.leftNavCategory>li {
+    padding-left: 6px;
+    text-indent: -4px
+}
+.leftNavSubcategoryLi {
+    padding-left: 9px
+}
+.leftNavDeepCategory>li {
+    padding-left: 10px
+}
+#leftNavigation .topRatedNavSelected img,
+#leftNavigation .topRatedNav img {
+    height: 10px
+}
+#leftNavigation a.leftNavCategoryLink span {
+    text-decoration: none;
+    font-size: 11px
+}
+#leftNavigation hr.separator {
+    border-color: #dfdfdf;
+    margin: 15px 0
+}
+#leftNavigation .section-heading {
+    font-weight: bold;
+    font-size: 11px;
+    margin-bottom: .5em;
+    text-transform: uppercase
+}

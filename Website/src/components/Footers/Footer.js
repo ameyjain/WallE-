@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import NavItem from '../Header/NavItem';
 
 export default class Footer extends Component {
 
@@ -8,9 +9,9 @@ export default class Footer extends Component {
         <section id="footer">
           <div className="inner">
           	<section className="content">
-          		<h4><u>FAQ</u></h4>
-              <h4><u>CONTACT</u></h4>
-              <h4><u>SHOP</u></h4>
+              <h4><u><NavItem to="/contact">FAQ</NavItem></u></h4>
+              <h4><u><NavItem to="/contact">CONTACT</NavItem></u></h4>
+              <h4><u><NavItem to="/">SHOP</NavItem></u></h4>
           	</section>
 
           	<section className="middle">

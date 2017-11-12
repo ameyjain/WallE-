@@ -1,0 +1,30 @@
+#contact-content .inner {
+  padding: 5em 0 3em 0;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 55em;
+}
+
+#contact-content .inner > * {
+  width: 100%;
+}
+
+#contact-content .inner .middle {
+  width: calc(50% - 1.5em);
+}
+
+#contact-content .inner .sidebar {
+  margin-left: 3em;
+  width: calc(50% - 1.5em);
+}
