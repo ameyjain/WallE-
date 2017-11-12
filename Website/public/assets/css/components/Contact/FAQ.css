@@ -330,9 +330,6 @@ label {
     #LoyFAQ input:checked ~ .tab-content {
         max-height: 380px
     }
-    :lang(ru) #LoyFAQ input:checked ~ .tab-content {
-        max-height: 430px
-    }
     .tab-content {
         max-height: 0;
         overflow: hidden;

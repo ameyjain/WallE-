@@ -9,6 +9,7 @@
 @import url(components/Home/Footer.css);
 @import url(components/Contact/ContactContent.css);
 @import url(components/Contact/FAQ.css);
+@import url(components/Checkout/CheckoutDetails.css);
 
 
 /*
@@ -2743,11 +2744,11 @@ table.fixed {
 }
 
 table tbody tr {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.0);
 }
 
 table tbody tr:nth-child(2n + 1) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 table tbody tr.alt {

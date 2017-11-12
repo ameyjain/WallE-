@@ -7,7 +7,7 @@ export default class CheckoutForm extends Component {
 
   render() {
     return (
-      <div id="page-wrapper">
+      <div >
 
         <form method="post" action="#">
           <h3>Customer information</h3>

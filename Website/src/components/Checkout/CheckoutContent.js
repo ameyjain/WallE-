@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { Footer } from '../Footers'
 import { Header } from '../Header'
 import { CheckoutForm } from '.'
+import { CheckoutProductDetails } from '.'
 import { NavBar } from '../Header'
 
 import $ from 'jquery';
@@ -13,22 +14,18 @@ export default class CheckoutContent extends Component {
   render() {
     return (
 
-      <div id="page-wrapper">
+      <div>
 
         <NavBar />
 
         <Header title="Checkout" />
 
-        <section id="contact-content">
-          <div className="inner">
-            <section className="middle">
-              <CheckoutForm />
-            </section>
-            <aside className="sidebar">
-              <CheckoutForm />
-            </aside>
+        <div className="flexbox-container">
+          <CheckoutProductDetails />
+          <div className="main container">
+            <CheckoutForm />
           </div>
-        </section>
+        </div>
 
         <Footer />
       </div>
