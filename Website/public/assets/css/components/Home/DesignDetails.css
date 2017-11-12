@@ -50,8 +50,7 @@ div#line1 {
 #textDiv span {
   color: black;
 }
-
-span.DesignHeading {
+#textDiv span.DesignHeading {
 	font-size: 2.25rem;
 	text-decoration: none;
 }
