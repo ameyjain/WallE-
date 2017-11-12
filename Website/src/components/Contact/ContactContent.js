@@ -5,6 +5,7 @@ import { Footer } from '../Footers'
 import { FAQSection } from '.'
 import { ContactDetails } from '.'
 import { Header } from '../Header'
+import { NavBar } from '../Header'
 
 import $ from 'jquery';
 
@@ -14,6 +15,8 @@ export default class ContactContent extends Component {
     return (
       <div id="page-wrapper">
 
+      <NavBar />
+      
       <Header title="Get Support" />
 
       <section id="contact-content">

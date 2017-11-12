@@ -8,6 +8,7 @@ import App from './components/App';
 import Home from './pages/Static/home';
 import About from './pages/Static/about';
 import Contact from './pages/Static/contact';
+import Checkout from './pages/Static/checkout';
 import NotFound from './pages/Static/404_not_found';
 
 export default (
@@ -15,6 +16,7 @@ export default (
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
+    <Route path="/checkout" component={Checkout} />
     <Route path="*" component={NotFound} />
   </Route>
 );

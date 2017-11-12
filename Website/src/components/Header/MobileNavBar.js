@@ -18,6 +18,7 @@ export default class MobileNavBar extends Component {
             <h2>Menu</h2>
             <ul className="links">
               <li><a href="/">Home</a></li>
+              <li><a href="/checkout">Buy Now</a></li>
               <li><a href="/contact">Contact</a></li>
               <li><a href="/contact">FAQ</a></li>
             </ul>
