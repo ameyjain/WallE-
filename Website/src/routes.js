@@ -10,6 +10,7 @@ import About from './pages/Static/about';
 import Contact from './pages/Static/contact';
 import Checkout from './pages/Static/checkout';
 import NotFound from './pages/Static/404_not_found';
+import ProductDetails from './pages/Static/productDetails';
 
 export default (
   <Route  component={App}>
@@ -17,6 +18,7 @@ export default (
     <Route path="/about" component={About} />
     <Route path="/contact" component={Contact} />
     <Route path="/checkout" component={Checkout} />
+    <Route path="/productDetails" component={ProductDetails} />
     <Route path="*" component={NotFound} />
   </Route>
 );
