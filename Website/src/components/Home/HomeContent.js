@@ -20,7 +20,7 @@ export default class HomeContent extends Component {
 
           <NavBar />
 
-          <Header title="Wall-e Inc." subtitle="YOUR HOME JUST GOT TWICE AS SMART." />
+          <Header title="Wall-e Inc." subtitle="YOUR HOME JUST GOT TWICE AS SMART." bgColor="#FFF"/>
 
           <DesignHeading />
 
