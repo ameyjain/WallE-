@@ -1,0 +1,125 @@
+
+#cart-container {
+  width: 100%;
+  background-color: white;
+}
+
+.cart-item-row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #E1E1E1;
+}
+
+.cart-item-row:first-child {
+  border-top-color: transparent;
+}
+
+.cart-mobile {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .cart-mobile {
+    display: inline;
+  }
+  .cart-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 1000px) {
+  .cart-mobile {
+    display: inline;
+  }
+  .cart-desktop {
+    display: none;
+  }
+}
+#price-heading {
+  margin-left: 200px;
+}
+.col-md-2 {
+  width: auto;
+}
+
+.col-md-6 {
+  width: 40%;
+}
+
+@media screen and (max-width: 414px) {
+  .col-md-2 {
+    width: auto;
+  }
+  .col-md-6 {
+    width: auto;
+  }
+  #price-div {
+    width: 100%;
+    text-align: left;
+  }
+  #total-div {
+    width: 100%;
+    text-align: left;
+  }
+  .btn-cart-mobile {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1000px) {
+  #price-div {
+    width: 100%;
+    text-align: left;
+  }
+  #total-div {
+    width: 100%;
+    text-align: left;
+  }
+  .btn-cart-mobile {
+    float: left;
+  }
+}
+
+
+#subtotal-section {
+  font-weight: bold;
+}
+.btn {
+  border-radius: 2px;
+  border-width: 0;
+  padding: 12px 18px;
+  font-weight: 500;
+  text-decoration: none;}
+
+.btn-rounded {
+  border-radius: 25px; }
+
+.btn-axis {
+  text-transform: uppercase;
+  font-size: 80%;
+  padding: 15px 30px;
+  font-weight: 600; }
+
+.btn-primary {
+  background-color: #30ABBF; }
+
+.btn-default {
+  background-color: #C8C8C8;
+  color: #ffffff; }
+
+.btn-block {
+  padding-top: 11px;
+  padding-bottom: 11px; }
+
+.btn-link {
+  padding: 0; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
+  background-color: #268796; }
+
+@media (max-width: 768px) {
+  .btn-block-on-mobile {
+    width: 100%;
+    margin-bottom: 20px; } }
