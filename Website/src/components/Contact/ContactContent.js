@@ -16,16 +16,16 @@ export default class ContactContent extends Component {
       <div id="page-wrapper">
 
       <NavBar />
-      
+
       <Header title="Get Support" />
 
       <section id="contact-content">
         <div className="inner">
           <section className="middle">
-            <ContactDetails/>
+            <FAQSection/>
           </section>
           <aside className="sidebar">
-            <FAQSection/>
+            <ContactDetails/>
           </aside>
         </div>
       </section>

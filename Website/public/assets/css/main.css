@@ -1119,14 +1119,6 @@ table.uniform tbody tr:nth-child(2n + 1) {
   width: 64rem;
 }
 
-.wrapper > .inner.medium {
-  width: 48rem;
-}
-
-.wrapper > .inner.small {
-  width: 32rem;
-}
-
 @media screen and (max-width: 1680px) {
   .wrapper > .inner {
     padding: 5rem 2.5rem 3rem 2.5rem;

@@ -6,6 +6,7 @@ export default class Footer extends Component {
 
   render() {
       return (
+
         <section id="footer">
           <div className="inner">
           	<section className="content">

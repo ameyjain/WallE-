@@ -1,5 +1,7 @@
 #contact-content .inner {
-  padding: 5em 0 3em 0;
+  padding: 7rem 3.5rem 5rem 3.5rem;
+  margin: 0 auto;
+  width: 64rem;
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -12,8 +14,6 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 55em;
 }
 
 #contact-content .inner > * {
@@ -27,4 +27,24 @@
 #contact-content .inner .sidebar {
   margin-left: 3em;
   width: calc(50% - 1.5em);
+}
+
+@media screen and (max-width: 980px) {
+
+  #contact-content .inner {
+    padding: 3em 3em 1em 3em;
+    display: block;
+    width: 100%;
+  }
+
+  #contact-content .inner .middle {
+    width: 100%;
+    margin: 0 0 4em 0;
+  }
+
+  #contact-content .inner .sidebar {
+    width: 100%;
+    margin: 0 0 4em 0;
+  }
+
 }
